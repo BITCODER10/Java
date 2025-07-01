@@ -22,6 +22,11 @@ public class Main {
         for(Map.Entry<String[],Integer> entry : fam.entrySet()){
             System.out.println(Arrays.toString(entry.getKey()) +": "+ entry.getValue());
         }
+
+        ArraySort sort = new ArraySort();
+        sort.setNumbers(number);
+        sort.sortingArrayBuildin();
+
   }
   public  static HashMap<String[], Integer > yetAnotherExample(){
 
