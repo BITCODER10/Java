@@ -17,7 +17,7 @@ public class SimpleFileWriter implements AutoCloseable {
     }
 
 
-    void readFile(){
+    void writeFile(){
 
         try (FileWriter Writer = new FileWriter(filePath)){
             System.out.println("Path is set to : "+ filePath);
