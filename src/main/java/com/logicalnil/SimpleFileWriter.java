@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.nio.file.Path;
 
 public class SimpleFileWriter implements AutoCloseable {
-    private final String filePath="/Users/mrdesai/Desktop/JAVA/Again/src/main/java/com/logicalnil/test.txt";
+    private final String filePath="/Users/*****/Desktop/JAVA/Again/src/main/java/com/logicalnil/test.txt";
     private Path p;
     SimpleFileWriter(){
 
