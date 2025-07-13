@@ -8,7 +8,7 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        String path = "/Users/*****/Desktop/Delete/test.py";
+        String path = "/Users/*****q/Desktop/Delete/test.py";
         try (SimpleFileReader simpleFileReader = new SimpleFileReader(Path.of(path));){
             simpleFileReader.readFile();
         }catch (FileNotFoundException f){
