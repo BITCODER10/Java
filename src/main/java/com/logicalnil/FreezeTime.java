@@ -24,7 +24,7 @@ public class FreezeTime {
     }
 
     String SpecifiFormat(){
-        String wanted = "dd-MMM-uuuu QQ w W E c F a h k K z";
+        String wanted = "dd-MMM-uuuu QQ w W E c F a h k K ";
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern(wanted);
         return LocalDateTime.now().format(formatter);
     }
