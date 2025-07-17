@@ -108,9 +108,10 @@ public class Main {
         for (int i = 0; i < shapes.size()-1; i++) {
             maxArea = shapes.get(i).Compare(shapes.get(i+1));
         }
-        System.out.printf("\nBiggest Area Belongs to : %s with area %d ",maxArea.getName(), maxArea.area());
+        assert maxArea != null;
+        System.out.printf("\nBiggest Area Belongs to : %s with area %f ",maxArea.getName(), maxArea.area());
 
-        System.out.println(maxArea.toString());
+        System.out.println("\n"+maxArea.toString());
         scanner.close();
 
   }
