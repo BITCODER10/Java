@@ -76,6 +76,7 @@ looping:    while (LogicChecker.getIncorrectCount() !=6){
             }
         } catch (InterruptedException e) {
             System.out.println("Stopped");
+
         }
     }
 
