@@ -11,5 +11,6 @@ public class Main {
         Path filePath = Path.of(audioFilePath);
         MusicPlayer musicPlayer = new MusicPlayer(filePath);
         musicPlayer.inputSteam();
+
   }
 }
