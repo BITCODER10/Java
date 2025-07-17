@@ -45,6 +45,7 @@ public class Main {
             System.out.println("Is government approved : "+g.getGovernmentApproval());
             System.out.println("What is the rent : "+g.getRent());
             System.out.println("---------------------------------");
+
         }
 
 
