@@ -9,5 +9,6 @@ public class Main {
         System.out.println(freezeTime.getLocalDateTime());
         System.out.println(freezeTime.SpecifiFormat());
         System.out.println(freezeTime.TimerStudy());
+
   }
 }
