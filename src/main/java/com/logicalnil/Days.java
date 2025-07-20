@@ -1,0 +1,21 @@
+package com.logicalnil;
+
+public enum Days {
+    SUNDAY(1),
+    MONDAY(2),
+    TUESDAY(3),
+    WEDNESDAY(4),
+    THURSDAY(5),
+    FRIDAY(6),
+    SATURDAY(7);
+
+    private int dayNumberOfWeek;
+
+    Days(int dayNumberOfWeek){
+        this.dayNumberOfWeek = dayNumberOfWeek;
+    }
+
+    public int getDayNumberOfWeek() {
+        return dayNumberOfWeek;
+    }
+}

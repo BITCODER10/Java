@@ -6,10 +6,15 @@ import java.util.*;
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println();
-        System.out.println();
-        System.out.println("********************************************************");
-        System.out.println("Switch to different branches to check the java projects");
-        System.out.println("********************************************************");
+        Days day = Days.MONDAY;
+        switch (day){
+            case FRIDAY,
+                 THURSDAY,
+                 WEDNESDAY-> System.out.println("Work from office");
+            case MONDAY,
+                 TUESDAY-> System.out.println("Work from Home");
+            case SATURDAY,
+                 SUNDAY-> System.out.println("Weekend !");
+        }
   }
 }
