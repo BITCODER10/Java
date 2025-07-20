@@ -8,16 +8,29 @@ public class Main {
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
-        System.out.println("CAUTION : You have 5 seconds to enter your name");
+        System.out.println("GAME BEGINS");
 
-        ThreadingClass threadingClassObject = new ThreadingClass();
-        Thread thread = new Thread(threadingClassObject);
-        thread.setDaemon(true); // this will finish another thread prematurely if main thread ends
-        thread.start(); // starting another threads
-        System.out.print("\nEnter your name");
-        String name = scanner.nextLine().toUpperCase();
+        ThreadingClass threadingClassObjectPing = new ThreadingClass("Ping");
+        ThreadingClass threadingClassObjectPong = new ThreadingClass("Pong");
 
-        System.out.println("\nHello : "+name);
+        Thread thread = new Thread(threadingClassObjectPing);
+        Thread anotherThread = new Thread(threadingClassObjectPong);
+
+        try {
+            thread.start();
+            anotherThread.start();
+        }catch (Exception e){
+            System.out.println("Exception occured"+e);
+        }
+
+
+        try {
+            thread.join();
+            anotherThread.join();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        System.out.println("GAME OVER");
 
         scanner.close();
   }
